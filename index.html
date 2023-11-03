@@ -1,69 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rangga Rosa - Portofolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="assets/styles/styles.css">
-</head>
-<body>
-    <header class="navbar-container">
-        <div class="navbar-logo">
-            <img src="assets/img/ranggarosa.svg" alt="Rangga Rosa">
-        </div>
-        <nav class="navbar-menu">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Portofolio</a></li>
-                <li><a href="#">Contact Me</a></li>
-            </ul>
-        </nav>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/styles/styles.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="navbar-container">
+        <ul class="navbar-menu">
+          <li><a href="#intro">Home</a></li>
+          <li><a href="#portofolio">Portofolio</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
         <div class="burger-btn">&#9776;</div>
+      </nav>
     </header>
     <main>
+      <div id="content">
+        <article id="intro" class="card-view">
+          <div class="intro-section">
+            <h2 class="intro-title">Halo, Salam Kenal</h2>
+            <p>
+              Kenalkan saya Rangga Rosa, lahir di Bandung pada tanggal
+              <time id="bornDay" datetime="1998-01-31">31 Januari 1998</time>,
+              saat ini saya berusia <span class="age"></span>. Sekarang saya
+              bertempat tinggal di Bogor bersama Istri dan Kedua anak saya. Dan
+              inilah potret keluarga kecil saya.
+            </p>
+          </div>
+          <div class="intro-img">
+            <img src="assets/img/intro.jpg" alt="Keluarga Kecil" />
+          </div>
+        </article>
 
+        <article id="study" class="card-view">
+          <h2>Latar Belakang Pendidikan</h2>
+          <div class="article-container">
+            <div class="article-img">
+              <img src="assets/img/study.jpg" alt="Latar Belakang Pendidikan" />
+            </div>
+            <div class="article-content">
+              <p>
+                Saya adalah lulusan SMKN 2 Baleendah jurusan Teknik Komputer dan
+                Jaringan (2015). Saya sempat berkuliah di STIA Bandung prodi
+                Ilmu Adminitrasi Negara (2017-2018), akan tetapi karena beberapa
+                hal saya tidak dapat melanjutkan studi tersebut.
+              </p>
+              <p>
+                Rencana saya ingin melanjut studi dalam waktu dekat ini, mohon
+                doanya dari kawan-kawan semua.
+              </p>
+            </div>
+          </div>
+        </article>
 
-        <aside>
-            <article class="about">
-                <header>
-                    <h2>About Me</h2>
-                    <figure></figure>
-                </header>
-                <section>
-                    <table>
-                        <tr>
-                            <th>Nama</th>
-                            <td>Rangga Rosa</td>
-                        </tr>
-                        <tr>
-                            <th>Umur</th>
-                            <td>25 tahun</td>
-                        </tr>
-                        <tr>
-                            <th>Domisili</th>
-                            <td>Bojonggede, Bogor</td>
-                        </tr>
-                    </table>
-                    <button>More Info</button>
-                </section>
-            </article>
-        </aside>
+        <article id="portofolio" class="card-view">
+          <h2>Portofolio</h2>
+          <section>
+            <h3>Riwayat Pekerjaan</h3>
+            <ul class="unsorted-list">
+              <li>
+                <strong>2014 - 2014</strong> : Teknisi Komputer di
+                <strong>Praktek Kerja Lapangan</strong>
+              </li>
+              <li>
+                <strong>2015 - 2018</strong> : Operator di
+                <strong>Bambu Net</strong>
+              </li>
+              <li>
+                <strong>2018 - 2018</strong> : Staff Tata Usaha di
+                <strong>SMK Al-Barq</strong>
+              </li>
+              <li>
+                <strong>2018 - 2020</strong> : Staff Adminitrasi di
+                <strong>PT Leskatmelin</strong>
+              </li>
+              <li>
+                <strong>2020 - 2021</strong> : Staff IT di
+                <strong>PT Leskatmelin</strong> dan <strong>PT AKMEI</strong>
+              </li>
+              <li>
+                <strong>2021 - Sekarang</strong> : Staff Adminitrasi di
+                <strong>PT Haleyora Power Unit Layanan Depok</strong>
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>Pendidikan Nonformal</h3>
+            <ul class="unsorted-list">
+              <li>
+                <strong>Apr 2021</strong> : Mengenal Pemrograman Komputer dari
+                <strong>Codepolitan</strong>
+              </li>
+              <li>
+                <strong>Apr 2021</strong> : Belajar Dasar-dasar HTML dan CSS
+                dari
+                <strong>Codepolitan</strong>
+              </li>
+              <li>
+                <strong>Apr 2021</strong> : Belajar JavaScript Dasar dari
+                <strong>Codepolitan</strong>
+              </li>
+              <li>
+                <strong>Apr 2021</strong> : Belajar JQuery Dasar dari
+                <strong>Codepolitan</strong>
+              </li>
+              <li>
+                <strong>Nov 2022</strong> : Algoritma dan Pemrograman Dasar dari
+                <strong>Codepolitan</strong>
+              </li>
+              <li>
+                <strong>Des 2022</strong> : Belajar Git untuk Pemula dari
+                <strong>Codepolitan</strong>
+              </li>
+              <li>
+                <strong>Jul 2023</strong> : Belajar Dasar-Dasar DevOps dari
+                <strong>Dicoding</strong>
+              </li>
+              <li>
+                <strong>Agu 2023</strong> : Belajar Dasar AWS Cloud dari
+                <strong>Dicoding</strong>
+              </li>
+              <li>
+                <strong>Agu 2023</strong> : Belajar Jaringan Komputer untuk
+                Pemula dari
+                <strong>Dicoding</strong>
+              </li>
+              <li>
+                <strong>Sep 2023</strong> : Belajar Dasar Pemrograman JavaScript
+                untuk Pemula dari
+                <strong>Dicoding</strong>
+              </li>
+              <li>
+                <strong>Okt 2023</strong> : Belajar Dasar Membuat Aplikasi
+                Back-End untuk Pemula dari
+                <strong>Dicoding</strong>
+              </li>
+              <li>
+                <strong>Nov 2023</strong> : Alibaba Cloud Certificaiton
+                Associate Cloud Computing <strong>Codepolitan</strong> dan
+                <strong>Alibaba Cloud</strong>
+              </li>
+            </ul>
+          </section>
+        </article>
+      </div>
+
+      <aside>
+        <article class="about card-view">
+          <div class="about-header"></div>
+          <header>
+            <h3>Sekilas Tentang Saya</h3>
+            <figure>
+              <img src="assets/img/about-img.JPG" alt="Rangga Rosa" />
+              <figcaption>Rangga Rosa</figcaption>
+            </figure>
+          </header>
+          <section>
+            <table class="table">
+              <tr>
+                <th>Nama</th>
+                <td>Rangga Rosa</td>
+              </tr>
+              <tr>
+                <th>Umur</th>
+                <td><span class="age"></span></td>
+              </tr>
+              <tr>
+                <th>Domisili</th>
+                <td>Bojonggede, Bogor</td>
+              </tr>
+            </table>
+          </section>
+          <button>More Info</button>
+        </article>
+      </aside>
     </main>
 
     <footer class="footer-container">
-        <p>Personal Website &copy; 2023, Rangga Rosa</p>
+      <p>Personal Website &copy; 2023, Rangga Rosa</p>
+      <div id="contact">
+        <p>Find me on :</p>
         <div class="social-link">
-            <ul>
-                <li><a href="https://github.com/ranggarosa" target="_blank"><i class="fab fa-github-square">  </i></a></li>
-                <li><a href="https://www.linkedin.com/in/rangga-rosa-228480162/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-                <li><a href="https://twitter.com/ranggarosa_" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
-                <li><a href="https://www.instagram.com/ranggarosa/" target="_blank"><i class="fab fa-instagram-square"></i></a></li>
-            </ul>
+          <ul>
+            <li>
+              <a href="https://github.com/ranggarosa" target="_blank"
+                ><i class="fab fa-github-square"> </i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/rangga-rosa-228480162/"
+                target="_blank"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/ranggarosa_" target="_blank"
+                ><i class="fab fa-twitter-square"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/ranggarosa/" target="_blank"
+                ><i class="fab fa-instagram-square"></i
+              ></a>
+            </li>
+          </ul>
         </div>
-        
+      </div>
     </footer>
 
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="assets/js/script.js"></script>
-</body>
+  </body>
 </html>

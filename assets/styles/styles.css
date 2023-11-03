@@ -1,166 +1,414 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&display=swap");
 
-*, *::before, *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Lato', sans-serif;
+  font-family: "Cabin", sans-serif;
 }
 
-header.navbar-container {
-    width: 100%;
-    background-color: #053B50;
-    margin-inline: auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-block: 1rem;
-    z-index: 999;
+header.main-header {
+  background-color: #363062;
+  margin-inline: auto;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  transition: top 0.3s ease-in-out;
 }
 
-header.navbar-container .navbar-logo img {
-    width: 125px;
+.navbar-container {
+  display: flex;
+  padding-block: 1rem;
 }
 
-header.navbar-container .navbar-menu ul {
-    padding-left: 0;
-    display: flex;
-    justify-content: center;
-    gap: 2rem 1rem;
+.navbar-container .navbar-menu {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  list-style-type: none;
+  gap: 2rem 1rem;
+  display: flex;
 }
 
-header.navbar-container .navbar-menu li {
+/* .navbar-container .navbar-menu li {
     list-style-type: none;
+} */
+
+.navbar-container .navbar-menu li a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #f5f5f5;
+  padding: 1rem 1.3rem;
+  border-radius: 9px;
+  transition: all 0.2s ease-in-out;
 }
 
-header.navbar-container .navbar-menu li a{
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: 500;
-    color: #EEEEEE;
-    padding: 1rem 1.3rem;
-    border-radius: 15px;
-    transition: all .2s ease-in-out;
-}
-
-header.navbar-container .navbar-menu li:hover a {
-    background-color: #64CCC5;
-    color: #053B50;
+.navbar-container .navbar-menu li:hover a {
+  background-color: #4d4c7d;
+  color: #f99417;
+  font-weight: 700;
 }
 
 .burger-btn {
-    display: none;
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: #EEEEEE;
-    cursor: pointer;
-    padding: .5rem 1.3rem;
-    border-radius: 15px;
-    transition: all .2s ease-in-out;
+  display: none;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #f5f5f5;
+  cursor: pointer;
+  margin-left: 1rem;
+  padding: 0.25rem 1rem;
+  border-radius: 9px;
+  transition: all 0.2s ease-in-out;
 }
 
 .burger-btn:hover {
-    background-color: #64CCC5;
-    color: #053B50;
-    font-weight: 700;
+  background-color: #4d4c7d;
+  color: #f99417;
 }
 
+main {
+  padding: 20px;
+  padding-top: 3rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+aside {
+  flex: 1;
+}
 
 footer.footer-container {
-    width: 100%;
-    background-color: #053B50;
-    margin-inline: auto;
-    display: flex;
+  width: 100%;
+  background-color: #363062;
+  margin-inline: auto;
+  display: flex;
 }
 
 footer.footer-container p {
-    flex: 1 auto;
-    color: #EEEEEE;
-    padding-left: 3rem;
-    margin: 0.5rem 0;
+  flex: 1 auto;
+  color: #f5f5f5;
+  padding-left: 3rem;
+  margin: 0.5rem 0;
+}
+
+footer.footer-container #contact {
+  display: flex;
+}
+
+footer.footer-container #contact p {
+  margin-right: 1rem;
 }
 
 footer.footer-container .social-link ul {
-    display: flex;
-    flex-flow: row nowrap;
-    padding-right: 3rem;
-    gap: 2rem 1rem;
-    margin: 0.5rem 0;
-}    
+  display: flex;
+  flex-flow: row nowrap;
+  padding-right: 3rem;
+  gap: 2rem 1rem;
+  margin: 0.5rem 0;
+}
 
 footer.footer-container .social-link li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 footer.footer-container .social-link li a {
-    text-decoration: none;
-    font-size: 1.5rem;
-    color: #EEEEEE;
-    transition: all .1s ease-in-out;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #f5f5f5;
+  transition: all 0.1s ease-in-out;
 }
 
 footer.footer-container .social-link li a:hover {
-    color: #64CCC5;
+  color: #f99417;
 }
 
-@media screen and (max-width:768px) {
-    header.navbar-container .navbar-menu ul {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        gap: 2rem 1rem;
-        background-color: #EEEEEE;
-        border-radius: 15px;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        top: 4rem;
-        right: 5rem;
-    }
-
-    header.navbar-container .navbar-menu.active ul {
-        display: flex;
-    }
-
-    header.navbar-container .navbar-menu li a{
-        text-decoration: none;
-        font-size: 1rem;
-        font-weight: 500;
-        color: #053B50;
-    }
-
-    .burger-btn {
-        display: block;
-    }
+h2,
+h3 {
+  color: #f99417;
+  margin-block: 0.5rem;
 }
 
-@media screen and (max-width:560px) {
-    footer.footer-container {
-        width: 100%;
-        background-color: #053B50;
-        margin-inline: auto;
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-    }
+p {
+  text-align: justify;
+  padding-bottom: 0.2rem;
+}
 
-    footer.footer-container p {
-        flex: 1 auto;
-        color: #EEEEEE;
-        padding-left: 0;
-        margin: 0;
-        margin-bottom: 0.5rem;
-        text-align: center;
-    }
+#content {
+  flex: 5;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem 2rem;
+}
 
-    footer.footer-container .social-link ul {
-        display: flex;
-        flex-flow: row nowrap;
-        padding-right: 0;
-        gap: 2rem 1rem;
-        margin: 0.5rem 0;
-    }    
+.about {
+  display: flex;
+  flex-flow: column nowrap;
+}
 
+.about header {
+  text-align: center;
+}
+
+.about img {
+  width: 100%;
+  max-width: 150px;
+  border-radius: 50%;
+  margin-block: 0.5rem;
+}
+
+.about figcaption {
+  display: none;
+}
+
+.card-view {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.about section {
+  display: flex;
+}
+
+table.table {
+  width: 100%;
+  display: flex;
+}
+
+.table th,
+.table td {
+  text-align: left;
+  flex: 1;
+}
+
+.about button {
+  padding: 0.8rem 2.5rem;
+  margin-block-start: 1rem;
+  text-transform: uppercase;
+  font-family: "Cabin", sans-serif;
+  color: #f5f5f5;
+  border: 1px solid transparent;
+  border-radius: 9px;
+  background-color: #363062;
+  cursor: pointer;
+  transition: all 0.15s ease-in;
+  align-self: center;
+}
+
+.about button:hover {
+  border: 1px solid #363062;
+  color: #f99417;
+  background-color: #4d4c7d;
+  font-weight: 700;
+}
+
+#intro {
+  width: 100%;
+  margin-inline: auto;
+  flex: 1;
+  display: flex;
+  align-items: row;
+}
+
+#intro .intro-section {
+  flex: 2;
+}
+
+#intro .intro-title {
+  font-size: 2.5rem;
+  margin-block: 1rem;
+}
+
+#intro .intro-section p {
+  margin-right: 1rem;
+}
+
+#intro .intro-img {
+  flex: 1;
+  display: flex;
+}
+
+#intro .intro-img img {
+  margin: auto;
+  min-width: 250px;
+  width: 300px;
+  border-radius: 5px;
+}
+
+.article-container {
+  width: 100%;
+  margin-inline: auto;
+  display: flex;
+  align-items: row;
+}
+
+.article-container .article-img {
+  flex: 1;
+  display: flex;
+}
+
+.article-container .article-img img {
+  margin: auto;
+  min-width: 250px;
+  width: 300px;
+}
+
+.article-container .article-content p {
+  margin-left: 1rem;
+}
+
+ul.unsorted-list {
+  list-style-position: inside;
+}
+
+ul.unsorted-list ::marker {
+  color: #363062;
+}
+
+@media screen and (max-width: 1200px) {
+  /* Mengubah layout main pada ukuran layar <= 1200px */
+  main {
+    flex-flow: column nowrap;
+  }
+
+  /* Mengubah layout sidebar pada ukuran layar <= 1200px */
+  main aside {
+    align-self: stretch;
+  }
+
+  .about {
+    flex-flow: row wrap;
+    display: flex;
+  }
+
+  .about .about-header {
+    flex: 1 0 100%;
+  }
+
+  .about .about-header h3 {
+    text-align: center;
+  }
+
+  .about header {
+    flex: 1 0 50%;
+  }
+
+  .about img {
+    width: 80%;
+    margin-block: auto;
+  }
+  .about section {
+    flex: 1 0 50%;
+    margin-block: auto;
+  }
+
+  .about button {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #intro {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  #intro .intro-img img {
+    margin: auto;
+    width: 100%;
+  }
+  /* Mengubah layout footer pada ukuran layar <= 768px */
+  footer.footer-container {
+    width: 100%;
+    background-color: #363062;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  footer.footer-container p {
+    flex: 1 auto;
+    color: #f5f5f5;
+    padding-left: 0;
+    margin: 0;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+
+  footer.footer-container #contact {
+    display: flex;
+    flex-flow: column;
+  }
+
+  footer.footer-container #contact p {
+    margin-right: 0rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0rem;
+  }
+
+  footer.footer-container .social-link ul {
+    display: flex;
+    flex-flow: row nowrap;
+    padding-right: 0;
+    gap: 2rem 1rem;
+    margin: 0.5rem 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* Mengubah menu menjadi dropdown dengan burger button pada ukuran layar <= 600px */
+  .navbar-container .navbar-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    padding: 0;
+    background-color: #4d4c7d;
+    border-radius: 9px;
+    top: 3rem;
+    left: 1rem;
+  }
+
+  .navbar-container .navbar-menu.active {
+    display: block;
+  }
+
+  .navbar-container .navbar-menu li a {
+    display: flex;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #f5f5f5;
+  }
+
+  .navbar-container .navbar-menu li:hover a {
+    background-color: #363062;
+    color: #f99417;
+    font-weight: 700;
+  }
+
+  .burger-btn {
+    display: flex;
+  }
+
+  .article-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .article-container .article-content p {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  /* menyembunyikan sidebar pada ukuran layar <= 320px */
+  main aside {
+    display: none;
+  }
 }
