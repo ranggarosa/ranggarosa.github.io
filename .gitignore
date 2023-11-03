@@ -1,1 +1,8 @@
-.vscode/*
+.vscode/
+.devcontainer/
+.codesandbox/
+.DS_Store/
+yarn*
+.idea/
+assets/.DS_Store/
+assets/img/.DS_Store/

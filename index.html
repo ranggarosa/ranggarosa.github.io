@@ -1,69 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rangga Rosa - Portofolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="assets/styles/styles.css">
-</head>
-<body>
-    <header class="navbar-container">
-        <div class="navbar-logo">
-            <img src="assets/img/ranggarosa.svg" alt="Rangga Rosa">
-        </div>
-        <nav class="navbar-menu">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Portofolio</a></li>
-                <li><a href="#">Contact Me</a></li>
-            </ul>
-        </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap"
+          rel="stylesheet" />
+    <link rel="stylesheet" href="assets/styles/styles.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="navbar-container">
+        <ul class="navbar-menu">
+          <li><a href="#intro">Intro</a></li>
+          <li><a href="#former-career">Former Career</a></li>
+          <li class="connect-with-me">Connect with Me</li>
+        </ul>
         <div class="burger-btn">&#9776;</div>
+      </nav>
     </header>
     <main>
+      <div id="content">
+        <article id="intro" class="card-view">
+          <div class="intro-section">
+            <h2 class="intro-title">Hello everyone 👋🏽</h2>
+            <p>
+              My name is Rangga, I was born <time id="bornDay" datetime="1998-01-31">31 Januari 1998</time> ago in
+              Bandung, Indonesia. I'm based in Depok, Indonesia. I live with My Wife and My Beloved Children.
+              Currently, I work at PT Saikindo Surya Gumiwang (SSG) as Accounting and Tax Manager.
+            </p>
+            <br>
+            <p>
+              I'm very interested on web development, cloud computing, devops and anything related technology. In
+              recent time I mainly focused on learning Java, Javascript, Docker and Cloud Services such AWS and
+              Alibaba Cloud.
+            </p>
+          </div>
+        </article>
 
+        <article id="education" class="card-view">
+          <h2>Educational Background</h2>
+          <div class="article-container">
+            <div class="article-img">
+              <img src="assets/img/education.png" alt="Educational Background" />
+            </div>
+            <div class="article-content">
+              <h3>Formal Education</h3>
+              <div class="slider" id="formal-education-slider">
+                <div class="slider-container">
+                  <!-- Will be populated by JavaScript -->
+                </div>
+                <button class="slider-button prev" aria-label="Previous slide">&lt;</button>
+                <button class="slider-button next" aria-label="Next slide">&gt;</button>
+              </div>
 
-        <aside>
-            <article class="about">
-                <header>
-                    <h2>About Me</h2>
-                    <figure></figure>
-                </header>
-                <section>
-                    <table>
-                        <tr>
-                            <th>Nama</th>
-                            <td>Rangga Rosa</td>
-                        </tr>
-                        <tr>
-                            <th>Umur</th>
-                            <td>25 tahun</td>
-                        </tr>
-                        <tr>
-                            <th>Domisili</th>
-                            <td>Bojonggede, Bogor</td>
-                        </tr>
-                    </table>
-                    <button>More Info</button>
-                </section>
-            </article>
-        </aside>
+              <h3>Informal Education</h3>
+              <div class="slider" id="informal-education-slider">
+                <div class="slider-container">
+                  <!-- Will be populated by JavaScript -->
+                </div>
+                <button class="slider-button prev" aria-label="Previous slide">&lt;</button>
+                <button class="slider-button next" aria-label="Next slide">&gt;</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article id="former-career" class="card-view">
+          <h2>Former Career</h2>
+          <div class="timeline" id="career-timeline">
+            <!-- Will be populated by JavaScript -->
+          </div>
+        </article>
+      </div>
+
+      <aside>
+        <article class="its-me card-view">
+          <div class="its-me-header">
+            <h3>This Is Me</h3>
+          </div>
+          <header>
+            <h3>This Is Me</h3>
+            <figure>
+              <img src="assets/img/its-me-img.JPG" alt="Rangga Rosa" />
+              <figcaption>Rangga Rosa</figcaption>
+            </figure>
+          </header>
+          <section>
+            <table class="table">
+              <tr>
+                <th>Name</th>
+                <td>Rangga Rosa</td>
+              </tr>
+              <tr>
+                <th>Age</th>
+                <td><span class="age"></span></td>
+              </tr>
+              <tr>
+                <th>Domicile</th>
+                <td>Depok</td>
+              </tr>
+            </table>
+          </section>
+          <button id="more-info-btn">More Info</button>
+        </article>
+      </aside>
+
+      <!-- Modal for More Info -->
+      <div id="more-info-modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Social Media</h2>
+          <div class="social-links">
+            <!-- Social media links will be populated by JavaScript -->
+          </div>
+        </div>
+      </div>
+
     </main>
 
     <footer class="footer-container">
-        <p>Personal Website &copy; 2023, Rangga Rosa</p>
+      <p>Personal Website &copy; 2023, Rangga Rosa</p>
+      <div id="contact">
+        <p>Find me on :</p>
         <div class="social-link">
-            <ul>
-                <li><a href="https://github.com/ranggarosa" target="_blank"><i class="fab fa-github-square">  </i></a></li>
-                <li><a href="https://www.linkedin.com/in/rangga-rosa-228480162/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-                <li><a href="https://twitter.com/ranggarosa_" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
-                <li><a href="https://www.instagram.com/ranggarosa/" target="_blank"><i class="fab fa-instagram-square"></i></a></li>
-            </ul>
+          <ul>
+            <!-- Will be populated by JavaScript -->
+          </ul>
         </div>
-        
+      </div>
     </footer>
 
     <script src="assets/js/script.js"></script>
-</body>
+  </body>
 </html>
