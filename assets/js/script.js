@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
     { year: '2018 - 2020', description: 'Administration Staff at PT Leskatmelin' },
     { year: '2020 - 2021', description: 'IT Staff at PT Leskatmelin and PT AKMEI' },
     { year: '2021 - 2024', description: 'Maintenance and Administration Staff at PT Haleyora Power UL Depok' },
-    { year: '2024 - Now', description: 'Accounting and Tax Manager at PT Saikindo Surya Gumiwang' }
+    { year: '2023 - Now', description: 'Founder and CEO at PT Indah Cipta Inovasi' }
   ];
 
   // Function to create slider

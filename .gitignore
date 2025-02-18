@@ -6,3 +6,5 @@ yarn*
 .idea/
 assets/.DS_Store/
 assets/img/.DS_Store/
+node_modules/
+package-lock.json
